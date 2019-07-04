@@ -3,9 +3,9 @@ import Keg from './Keg';
 
 const allKegs = [
   {
-    name: 'Sewer Brew',
-    type: 'Jenkem',
-    abv: 2.5,
+    name: 'Rotgut',
+    type: 'Swill',
+    abv: 11,
     price: 1
   },
   {
@@ -19,6 +19,12 @@ const allKegs = [
     type: 'Swill',
     abv: 20,
     price: 5
+  },
+  {
+    name: 'Unicorn Blood',
+    type: 'Magical Blood',
+    abv: 0,
+    price: 100
   },
   {
     name: 'Teff Lager',
@@ -50,6 +56,24 @@ const allKegs = [
     abv: 4.5,
     price: 4
   },
+  {
+    name: 'Sewer Brew',
+    type: 'Jenkem',
+    abv: 2.5,
+    price: 1
+  },
+  {
+    name: 'Goblin Sweat',
+    type: 'Swill',
+    abv: 1.5,
+    price: 1
+  },
+  {
+    name: 'Ogre Grog',
+    type: 'Swill',
+    abv: 13,
+    price: 6
+  }
 ];
 
 function KegsList(){
