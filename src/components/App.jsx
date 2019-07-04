@@ -13,12 +13,9 @@ function App() {
         body {
           font-family: Arial, Helvetica, sans-serif;
         }
-        h1, h2, h3 {
+        h1, h2, h3, h4, h5 {
           text-align: center;
           color: black;
-        }
-        span {
-          text-align: center;
         }
       `}</style>
       <Header />
