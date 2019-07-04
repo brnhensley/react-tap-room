@@ -7,7 +7,6 @@ function MainPage(){
     <div>
       <h1>I an a main page</h1>
       <MainHeader />
-      <KegsList />
     </div>
   );
 }

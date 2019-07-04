@@ -3,6 +3,7 @@ import Header from './Header';
 import MainPage from './MainPage';
 import Footer from './Footer';
 import { Switch, Route } from 'react-router-dom';
+import KegsList from './KegsList';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Header />
       <Switch>
         <Route exact path='/' component={MainPage} />
+        <Route path='/kegs' component={KegsList} />
       </Switch>
       <Footer />
     </div>
