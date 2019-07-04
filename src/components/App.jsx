@@ -9,6 +9,9 @@ function App() {
   return (
     <div>
       <style global jsx>{`
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
         h2 {
           text-align: center;
         }
