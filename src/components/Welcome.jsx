@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Welcome(){
   return (
     <div>
-      <h1><Link to="/kegs">Click here to see what's in rotation on {today}.</Link></h1>
+      <h1><Link to="/kegs">Click here to see what drinks are in rotation on {today}.</Link></h1>
     </div>
   );
 }

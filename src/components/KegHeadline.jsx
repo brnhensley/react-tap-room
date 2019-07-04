@@ -10,8 +10,9 @@ function KegHeadline(){
 }
 
 let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
 let date = new Date();
 let today = (months[date.getMonth()] + ' ' + date.getDay() + ', ' + date.getFullYear());
+
+// Need to make this variable global and pass with props
 
 export default KegHeadline;
