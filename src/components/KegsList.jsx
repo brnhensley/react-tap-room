@@ -1,5 +1,6 @@
 import React from 'react';
 import Keg from './Keg';
+import KegHeadline from './KegHeadline';
 
 const allKegs = [
   {
@@ -79,7 +80,7 @@ const allKegs = [
 function KegsList(){
   return (
     <div>
-      <h1>I an a kegs list</h1>
+      <KegHeadline />
       {allKegs.map((keg, index) =>
         <Keg name={keg.name}
           type={keg.type}
