@@ -13,7 +13,6 @@ function App() {
           font-family: Arial, Helvetica, sans-serif;
         }
         h1, h2, h3 {
-          margin: auto;
           text-align: center;
         }
         span {

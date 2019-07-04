@@ -4,11 +4,14 @@ import { Link } from 'react-router-dom';
 
 function Header(){
   return (
+    <Link to="/">
     <div>
       <style jsx>{`
         div {
           display: flex;
+          flex-direction: column;
           vertical-align: middle;
+              justify-content: center;
           text-align: center;
           text-transform: uppercase;
           background-image: url(${banner});
@@ -17,11 +20,15 @@ function Header(){
           background-repeat: no-repeat;
           background-position: center;
         }
+        span {
+          background-color: white;
+          text-decoration: none;
+        }
       `}</style>
-      <h1>The Starving Mule</h1><br></br>
-      <h2>A Dwarven Tap Room</h2>
-      <Link to="/">Home</Link>
-    </div>
+      <h1><span>The Starving Mule</span></h1>
+      <h2><span>A Dwarven Tap Room</span></h2>
+      </div>
+      </Link>
   );
 }
 
