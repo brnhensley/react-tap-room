@@ -12,7 +12,8 @@ function App() {
         body {
           font-family: Arial, Helvetica, sans-serif;
         }
-        h2, h3 {
+        h1, h2, h3 {
+          margin: auto;
           text-align: center;
         }
         span {
