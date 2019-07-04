@@ -16,3 +16,5 @@ let date = new Date();
 let today = (months[date.getMonth()] + ' ' + date.getDay() + ', ' + date.getFullYear());
 
 export default KegsLink;
+
+// Need to make 'today' variable global instead of having tis twice
