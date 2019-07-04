@@ -20,6 +20,7 @@ function Keg(props) {
       <h3>Type: {props.type} </h3>
       <h3>Alcohol by Volume: {props.abv}% </h3>
       <h3>Price per Pint: ${props.price} </h3>
+      <h4>{props.description}</h4>
     </div>
   );
 
@@ -30,6 +31,8 @@ Keg.PropTypes = {
   type: PropTypes.string.isRequired,
   abv: PropTypes.number.isRequired,
   price: PropTypes.number.isRequired,
+  description: PropTypes.string
+  // add remaining pints
 };
 
 export default Keg;
