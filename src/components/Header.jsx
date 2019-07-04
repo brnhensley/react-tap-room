@@ -9,7 +9,6 @@ function Header(){
         div {
           display: flex;
           vertical-align: middle;
-             font-family: Arial, Helvetica, sans-serif;
           text-align: center;
           text-transform: uppercase;
           background-image: url(${banner});
