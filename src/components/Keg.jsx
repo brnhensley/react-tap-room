@@ -34,4 +34,4 @@ Keg.PropTypes = {
 
 export default Keg;
 
-// I'd like to get an if statement in the ABV above but it would only display as text.  Some clarification on where I can use JS would be appreciated.
+// I'd like to get an if statement in the ABV (for the Unicorn Blood) above but it would only display as text.  Some clarification on where I can use JS would be appreciated.
