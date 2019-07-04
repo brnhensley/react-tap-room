@@ -4,6 +4,7 @@ import MainPage from './MainPage';
 import Footer from './Footer';
 import { Switch, Route } from 'react-router-dom';
 import KegsList from './KegsList';
+import UpcomingEvents from './UpcomingEvents';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Switch>
         <Route exact path='/' component={MainPage} />
         <Route path='/kegs' component={KegsList} />
+        <Route path='/events' component={UpcomingEvents} />
       </Switch>
       <Footer />
     </div>
