@@ -14,13 +14,12 @@ function Header(){
           background-image: url(${banner});
           background-size: 80% 400px;
           height: 400px;
+          background-repeat: no-repeat;
+          background-position: center;
         }
-        h1 {
-            margin: auto;
-        text-align: center;
-        }
-        `}</style>
-      <h1>The Starving Mule - A Dwarven Tap Room</h1>
+      `}</style>
+      <h1>The Starving Mule</h1><br></br>
+      <h2>A Dwarven Tap Room</h2>
       <Link to="/">Home</Link>
     </div>
   );
