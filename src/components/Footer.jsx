@@ -20,7 +20,7 @@ function Footer(){
       }
       `}</style>
 
-      <h5> Stay away from the mule, it is starving because of a werecurse. The mule is crazed for blood and flesh so we will not come to your rescue.  That mule is dead to us even if it lives forever.</h5>
+      <h5> Stay away from the mule, it is starving because of a werecurse. The mule is crazed for blood and flesh so we will not come to your rescue if the mule gets ahold of you.  That mule is dead to us even if it lives forever.</h5>
     </footer>
   );
 }
