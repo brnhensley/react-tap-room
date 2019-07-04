@@ -14,6 +14,7 @@ function App() {
         }
         h1, h2, h3 {
           text-align: center;
+          color: black;
         }
         span {
           text-align: center;
