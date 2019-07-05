@@ -4,7 +4,7 @@ import React from 'react';
 function KegHeadline(){
   return (
     <div>
-      <h1>All of our kegs available today ( {today} ).</h1>
+      <h1>All of the kegs available today ( {today} ).</h1>
     </div>
   );
 }
