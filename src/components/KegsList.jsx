@@ -111,7 +111,7 @@ class KegsList extends React.Component {
       allKegs: masterKegsList,
     };
     this.handleNewKegCreation = this.handleNewKegCreation.bind(this);
-
+    this.handleSellPint = this.handleSellPint.bind(this);
   }
 
   handleNewKegCreation(newKeg) {
@@ -121,7 +121,10 @@ class KegsList extends React.Component {
   }
 
   handleSellPint(index) {
-    console.log(index);
+    let newMasterKegList = this.state.allKegs;
+    newMasterKegList[index].pints--;
+    this.setState({ allKegs: newMasterKegList });
+    console.log(newMasterKegList[index].pints);
 
   }
 
