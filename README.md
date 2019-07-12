@@ -1,6 +1,6 @@
 # _The Starving Mule Taproom_
 
-#### _A Dwarven Taproom websire, 7-4-19_
+#### _A Dwarven Taproom website, 7-4-19_
 
 #### _By Brian Hensley_
 
@@ -16,8 +16,6 @@ This is a website for an imaginary taproom built in React.
 * _Enjoy_
 
 ## _Component Plan_
-* _This plan quickly got left behind for routing_
-
 ![ss1](https://github.com/brnhensley/react-tap-room/blob/master/CompTree.png)
 
 ## _Support and contact details_
