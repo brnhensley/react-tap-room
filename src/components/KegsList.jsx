@@ -142,6 +142,7 @@ class KegsList extends React.Component {
             description={keg.description}
             key={index}
             onSellPint={this.handleSellPint}
+            index={index}
           />
         )}
 

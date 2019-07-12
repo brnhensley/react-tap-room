@@ -27,8 +27,8 @@ function Keg(props) {
       <h3>Type: {props.type} </h3>
       <h3>{display}</h3>
       <h3>Price per Pint: ${props.price}</h3>
-      <h3>Index - {props.key}</h3>
-      <h3>{props.pints} Pints remaining <button onClick={() => props.onSellPint(props.key)}>Sell A Pint!</button></h3>
+      <h3>Index - {props.index}</h3>
+      <h3>{props.pints} Pints remaining <button onClick={() => {props.onSellPint(props.index);}}>Sell A Pint!</button></h3>
       <h4>{props.description}</h4>
     </div>
   );
@@ -41,7 +41,7 @@ Keg.propTypes = {
   price: PropTypes.number,
   pints: PropTypes.number,
   description: PropTypes.any,
-  key: PropTypes.number,
+  index: PropTypes.number,
   onSellPint: PropTypes.func,
   keg: PropTypes.object
 };
