@@ -78,8 +78,8 @@ const allKegs = [
     name: 'Goblin Sweat',
     type: 'Swill',
     abv: 1.5,
-    price: 1,
-    description: 'We got ripped off and now have kegs and kegs of Goblin Sweat. Someone out there must want this right?'
+    price: 0,
+    description: 'We got ripped off and now have kegs and kegs of Goblin Sweat. Someone out there must want this right?  Free to anyone willing to drain the barrels for us'
   },
   {
     name: 'Ogre Grog',
@@ -102,7 +102,8 @@ function KegsList(){
           abv={keg.abv}
           price={keg.price}
           description={keg.description}
-          key={index} />
+          key={index}
+        />
       )}
 
     </div>
