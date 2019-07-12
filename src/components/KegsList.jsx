@@ -120,6 +120,11 @@ class KegsList extends React.Component {
     this.setState({ allKegs: newMasterKegList });
   }
 
+  handleSellPint(index) {
+    console.log(index);
+
+  }
+
   render() {
     return (
       <div>
@@ -127,13 +132,16 @@ class KegsList extends React.Component {
         <UpcomingEventsLink />
 
         {this.state.allKegs.map((keg, index) =>
-          <Keg name={keg.name}
+          <Keg
+            keg={keg}
+            name={keg.name}
             type={keg.type}
             abv={keg.abv}
             price={keg.price}
             pints={keg.pints}
             description={keg.description}
             key={index}
+            onSellPint={this.handleSellPint}
           />
         )}
 
