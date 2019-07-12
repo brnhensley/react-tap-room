@@ -104,6 +104,7 @@ function KegsList(){
           description={keg.description}
           key={index} />
       )}
+
     </div>
   );
 }
