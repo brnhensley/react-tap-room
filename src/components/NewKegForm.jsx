@@ -25,7 +25,7 @@ function NewKegForm(props) {
           type='text'
           id='name'
           placeholder='Keg Name'
-          ref={(input) => {_names=input;}}
+          ref={(input) => {_name=input;}}
         />
         <input
           type='text'
@@ -58,12 +58,12 @@ function NewKegForm(props) {
 
 NewKegForm.propTypes = {
   onNewKegCreation: PropTypes.func.isRequired,
-  name: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
-  abv: PropTypes.number.isRequired,
-  price: PropTypes.number.isRequired,
-  pints: PropTypes.number.isRequired,
-  description: PropTypes.string.isRequired
+  name: PropTypes.string,
+  type: PropTypes.string,
+  abv: PropTypes.number,
+  price: PropTypes.number,
+  pints: PropTypes.number,
+  description: PropTypes.string
 };
 
 export default NewKegForm;
