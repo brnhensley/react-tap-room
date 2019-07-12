@@ -14,11 +14,11 @@ const allEvents =
   },
   {
     date: '9-1-19',
-    description: 'Stay Away - The goblins show up the beginning of every September.'
+    description: [<span style={{color: 'red'}}>Stay Away</span>, ' - The goblins show up and siege us at the beginning of every September. If you are here when they show up you are stuck here until they leave.']
   },
   {
     date: '10-15-19',
-    description: 'Goblins should be gone by now... show up at your own risk, doors open if it is safe.'
+    description: ['Goblins ', <em>should</em>, ' be gone by now... show up at your own risk, doors open if it is safe.']
   },
   {
     date: '2-1-20',
@@ -61,9 +61,5 @@ function UpcomingEvents(){
     </div>
   );
 }
-
-// how to pass HTML into props...
-// const siege = {<span>Stay Away - The goblins show up the beginning of every September.</span>};
-// const gobs = {Goblins <em>should</em> be gone by now... show up at your own risk, doors open if it is safe.}
 
 export default UpcomingEvents;
