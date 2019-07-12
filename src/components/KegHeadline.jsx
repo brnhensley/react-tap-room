@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 
 function KegHeadline(){
   return (
@@ -10,5 +9,3 @@ function KegHeadline(){
 }
 
 export default KegHeadline;
-
-// <h3><Link to='/newkeg'>Add a new keg</Link></h3>
