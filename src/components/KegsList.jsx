@@ -3,7 +3,6 @@ import Keg from './Keg';
 import KegHeadline from './KegHeadline';
 import UpcomingEventsLink from './UpcomingEventsLink';
 import NewKegForm from './NewKegForm';
-import { Switch, Route } from 'react-router-dom';
 
 const masterKegsList = [
   {
@@ -89,10 +88,10 @@ const masterKegsList = [
   {
     name: 'Goblin Sweat',
     type: 'Swill',
-    abv: 1.5,
-    price: 0,
+    abv: 0.5,
+    price: -1,
     pints: 124,
-    description: 'We got ripped off and now have kegs and kegs of Goblin Sweat. Someone out there must want this right?  Free (with valid purchase or vomit scrubbing) to anyone willing to drain the barrels for us.'
+    description: ['We got ripped off and now have kegs and kegs of Goblin Sweat. Someone out there must want this right?...', <br/>,  <span style={{color: 'red'}}>UPDATE 2011:</span>, ' Ok fine, nobody wants this, we will pay you to drink it on the condition that you puke outside. There is some kind of curse, whenever we dump the barrels they refill, someone has to drink it..']
   },
   {
     name: 'Ogre Grog',
@@ -116,14 +115,9 @@ class KegsList extends React.Component {
   }
 
   handleNewKegCreation(newKeg) {
-    console.log(this.state.allKegs);
-    console.log(newKeg);
-
     let newMasterKegList = this.state.allKegs;
     newMasterKegList.push(newKeg);
-    console.log(newMasterKegList);
     this.setState({ allKegs: newMasterKegList });
-    console.log(this.state.allKegs);
   }
 
   render() {
@@ -143,9 +137,7 @@ class KegsList extends React.Component {
           />
         )}
 
-        <NewKegForm
-          onNewKegCreation={this.handleNewKegCreation}
-        />}
+        <NewKegForm onNewKegCreation={this.handleNewKegCreation}/>
 
       </div >
     );
