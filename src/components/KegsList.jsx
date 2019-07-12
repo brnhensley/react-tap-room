@@ -124,8 +124,6 @@ class KegsList extends React.Component {
     let newMasterKegList = this.state.allKegs;
     newMasterKegList[index].pints--;
     this.setState({ allKegs: newMasterKegList });
-    console.log(newMasterKegList[index].pints);
-
   }
 
   render() {
