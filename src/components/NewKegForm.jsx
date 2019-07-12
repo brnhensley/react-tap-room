@@ -10,7 +10,6 @@ function NewKegForm(props) {
 
   function handleNewKegSubmission(event) {
     event.preventDefault();
-    console.log(_name.value);
     props.onNewKegCreation({name: _name.value, type: _type.value, abv: parseInt(_abv.value), price: parseInt(_price.value), pints: 124, description: _description.value});
     _name.value = null;
     _type.value = null;
@@ -75,12 +74,6 @@ function NewKegForm(props) {
 
 NewKegForm.propTypes = {
   onNewKegCreation: PropTypes.func.isRequired,
-  name: PropTypes.string,
-  type: PropTypes.string,
-  abv: PropTypes.number,
-  price: PropTypes.number,
-  pints: PropTypes.number,
-  description: PropTypes.string
 };
 
 export default NewKegForm;
