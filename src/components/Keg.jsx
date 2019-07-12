@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function Keg(props) {
   let display = `Alcohol by Volume: ${props.abv}%`;
   if (props.abv == 0) {
-    display = 'You\'re not drinking this for its alcohol';
+    display = 'You\'re not drinking this for the alcohol';
   }
 
   return (
