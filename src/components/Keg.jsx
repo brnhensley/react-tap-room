@@ -26,7 +26,8 @@ function Keg(props) {
       <h2>{props.name}</h2>
       <h3>Type: {props.type} </h3>
       <h3>{display}</h3>
-      <h3>Price per Pint: ${props.price} </h3>
+      <h3>Price per Pint: ${props.price}</h3>
+      <h3>{props.pints} Pints remaining <button>Sell A Pint!</button></h3>
       <h4>{props.description}</h4>
     </div>
   );
@@ -37,10 +38,8 @@ Keg.propTypes = {
   type: PropTypes.string.isRequired,
   abv: PropTypes.number.isRequired,
   price: PropTypes.number.isRequired,
+  pints: PropTypes.number.isRequired,
   description: PropTypes.string
-  // add remaining pints
 };
 
 export default Keg;
-
-// I'd like to get an if statement in the ABV (for the Unicorn Blood) above but it would only display as text.  Some clarification on where I can use JS would be appreciated.
