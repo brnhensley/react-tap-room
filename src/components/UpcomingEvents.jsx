@@ -48,12 +48,14 @@ function UpcomingEvents(){
           h2 {
             border-bottom: 2px solid grey:
           }
-        `}</style>
+        `}
+        </style>
         <h2>Upcoming Events</h2>
         {allEvents.map((event, index) =>
           <Event date={event.date}
             description={event.description}
-            key={index} />
+            key={index}
+          />
         )}
       </div>
     </div>

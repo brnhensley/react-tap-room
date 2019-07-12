@@ -19,7 +19,8 @@ function App() {
           text-align: center;
           color: black;
         }
-      `}</style>
+      `}
+      </style>
       <Header />
       <Switch>
         <Route exact path='/' component={MainPage} />
