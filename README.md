@@ -18,7 +18,7 @@ This is a website for an imaginary taproom built in React.
 ## _Component Plan_
 * _This plan quickly got left behind for routing_
 
-![ss1](https://github.com/brnhensley/react-tap-room/blob/master/diagram.png)
+![ss1](https://github.com/brnhensley/react-tap-room/blob/master/CompTree.png)
 
 ## _Support and contact details_
 
