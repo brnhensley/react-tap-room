@@ -4,7 +4,7 @@ import KegHeadline from './KegHeadline';
 import UpcomingEventsLink from './UpcomingEventsLink';
 import NewKegForm from './NewKegForm';
 
-const allKegs = [
+const masterKegsList = [
   {
     name: 'Rotgut',
     type: 'Swill',
@@ -103,28 +103,49 @@ const allKegs = [
   }
 ];
 
-function KegsList() {
-  return (
-    <div>
-      <KegHeadline />
-      <UpcomingEventsLink />
+class KegsList extends React.Component {
 
-      {allKegs.map((keg, index) =>
-        <Keg name={keg.name}
-          type={keg.type}
-          abv={keg.abv}
-          price={keg.price}
-          pints={keg.pints}
-          description={keg.description}
-          key={index}
-        />
-      )}
+  constructor(props) {
+    super(props);
+    this.state = {
+      allKegs: masterKegsList,
+    };
+    this.handleNewKegCreation = this.handleNewKegCreation.bind(this);
 
-      <NewKegForm />
-    </div>
-  );
+  }
+
+  handleNewKegCreation(newKeg) {
+    console.log(this.state.allKegs);
+    let newMasterKegList = Object.assign(
+      {},
+      this.state.allKegs,
+      {newKeg}
+    );
+    this.setState({ allKegs: newMasterKegList });
+    console.log(this.state.allKegs);
+  }
+
+  render() {
+    return (
+      <div>
+        <KegHeadline />
+        <UpcomingEventsLink />
+
+        {this.state.allKegs.map((keg, index) =>
+          <Keg name={keg.name}
+            type={keg.type}
+            abv={keg.abv}
+            price={keg.price}
+            pints={keg.pints}
+            description={keg.description}
+            key={index}
+          />
+        )}
+
+        <NewKegForm onNewKegCreation={this.handleNewKegCreation} />
+      </div>
+    );
+  }
 }
 
 export default KegsList;
-
-// Add pints remaining
