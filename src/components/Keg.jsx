@@ -26,7 +26,7 @@ function Keg(props) {
 
 }
 
-Keg.PropTypes = {
+Keg.propTypes = {
   name: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   abv: PropTypes.number.isRequired,

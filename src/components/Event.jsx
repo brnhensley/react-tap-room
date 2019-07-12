@@ -9,7 +9,7 @@ function Event(props){
   );
 }
 
-Event.PropTypes = {
+Event.propTypes = {
   date: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 };
