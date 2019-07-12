@@ -3,6 +3,7 @@ import Keg from './Keg';
 import KegHeadline from './KegHeadline';
 import UpcomingEventsLink from './UpcomingEventsLink';
 import NewKegForm from './NewKegForm';
+import { Switch, Route } from 'react-router-dom';
 
 const masterKegsList = [
   {
@@ -116,11 +117,11 @@ class KegsList extends React.Component {
 
   handleNewKegCreation(newKeg) {
     console.log(this.state.allKegs);
-    let newMasterKegList = Object.assign(
-      {},
-      this.state.allKegs,
-      {newKeg}
-    );
+    console.log(newKeg);
+
+    let newMasterKegList = this.state.allKegs;
+    newMasterKegList.push(newKeg);
+    console.log(newMasterKegList);
     this.setState({ allKegs: newMasterKegList });
     console.log(this.state.allKegs);
   }
@@ -142,8 +143,11 @@ class KegsList extends React.Component {
           />
         )}
 
-        <NewKegForm onNewKegCreation={this.handleNewKegCreation} />
-      </div>
+        <NewKegForm
+          onNewKegCreation={this.handleNewKegCreation}
+        />}
+
+      </div >
     );
   }
 }

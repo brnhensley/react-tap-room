@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Keg(props) {
-  let display = `Alcohol by Volume: ${props.abv}`;
+  let display = `Alcohol by Volume: ${props.abv}%`;
   if (props.abv == 0) {
     display = 'You\'re not drinking this for its alcohol';
   }
@@ -34,11 +34,11 @@ function Keg(props) {
 }
 
 Keg.propTypes = {
-  name: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
-  abv: PropTypes.number.isRequired,
-  price: PropTypes.number.isRequired,
-  pints: PropTypes.number.isRequired,
+  name: PropTypes.string,
+  type: PropTypes.string,
+  abv: PropTypes.number,
+  price: PropTypes.number,
+  pints: PropTypes.number,
   description: PropTypes.string
 };
 
