@@ -122,7 +122,11 @@ class KegsList extends React.Component {
 
   handleSellPint(index) {
     let newMasterKegList = this.state.allKegs;
-    newMasterKegList[index].pints--;
+    if (newMasterKegList[index].pints > 0){
+      newMasterKegList[index].pints--;
+    } else {
+      return;
+    }
     this.setState({ allKegs: newMasterKegList });
   }
 
