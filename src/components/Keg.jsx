@@ -3,8 +3,13 @@ import PropTypes from 'prop-types';
 
 function Keg(props) {
   let display = `Alcohol by Volume: ${props.abv}%`;
-  if (props.abv == 0) {
+  if (props.abv === 0) {
     display = 'You\'re not drinking this for the alcohol';
+  }
+
+  let pintsRemaining = `${props.pints} Pints remaining `;
+  if (props.pints === 0){
+    pintsRemaining = 'It is empty, time to go home.';
   }
 
   return (
@@ -27,7 +32,7 @@ function Keg(props) {
       <h3>Type: {props.type} </h3>
       <h3>{display}</h3>
       <h3>Price per Pint: ${props.price}</h3>
-      <h3>{props.pints} Pints remaining <button onClick={() => {props.onSellPint(props.index);}}>Sell A Pint!</button></h3>
+      <h3>{pintsRemaining} <button onClick={() => {props.onSellPint(props.index);}}>Sell A Pint!</button></h3>
       <h4>{props.description}</h4>
     </div>
   );
